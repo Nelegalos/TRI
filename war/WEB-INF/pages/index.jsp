@@ -1,13 +1,18 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:url var="resources" value="/resources/theme1" scope="request" />
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link href="${resources}/css/core.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
 </head>
 <body>
-<h1>Ant + Spring MVC Web Project Example</h1>
- 
-<p>Message : ${message}</p>	
+
+<form method="POST" action="/AntSpringMVC/pictures" enctype="multipart/form-data">
+        File to upload: <input type="file" name="file"><br /> 
+        Name1: <input type="text" name="name"><br /> <br /> 
+                <input type="submit" value="Upload"> Press here to upload the file!
+    </form>
+
 </body>
 </html>
